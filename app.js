@@ -2,6 +2,8 @@ let foods = food;
 let product_container = document.getElementById('container');
 
 const b = document.querySelectorAll('button#nat');
+const a = document.querySelectorAll('button#type');
+const clear = document.getElementById('clear');
 
 b.forEach(button =>{
     button.addEventListener('click',()=>{
@@ -24,14 +26,28 @@ b.forEach(button =>{
     })
 })
 
+clear.addEventListener('click',()=>{
+    b.forEach(button=>{
+        if(button.classList.contains('active')){
+            button.classList.remove('active');
+        }
+        foods = food;
+    })
+    a.forEach(button=>{
+        if(button.classList.contains('active')){
+            button.classList.remove('active');
+        }
+        foods = food;
+    })
+    foods = food;
+    render(foods)
+})
 
 
 
 
 
 
-
-const a = document.querySelectorAll('button#type');
 a.forEach(grp =>{
     grp.addEventListener('click',()=>{
         const value = grp.value.toLowerCase();

@@ -7,21 +7,32 @@
 <body>
     
     <header>
-        <button id="nat" value="Europe">Europe</button>
-        <button id="nat" value="North America">North America</button>
-        <button id="nat" value="South America">South America</button>
-        <button id="nat" value="Asia">Asia</button>
-        <button id="nat" value="Australia">Australia</button>
-    </header>
-    <header>
-        <button id="type" value="Fast Food">Fast Food</button>
-        <button id="type" value="main courses">main courses</button>
-        <button id="type" value="soups">soups</button>
+        <div id="line1">
+            <h1>Title</h1>
+            <input id="text" type="text" placeholder="Search by name...">
+            <div id="clear">Clear the filters</div>
+        </div>
+        <div id="line2">
+            <div id="nations">
+                <button id="nat" value="Europe">Europe</button>
+                <button id="nat" value="North America">North America</button>
+                <button id="nat" value="South America">South America</button>
+                <button id="nat" value="Asia">Asia</button>
+                <button id="nat" value="Australia">Australia</button>
+            </div>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <div id="types">
+                <button id="type" value="Fast Food">Fast Food</button>
+                <button id="type" value="main courses">main courses</button>
+                <button id="type" value="soups">soups</button>
+            </div>
+        </div>
     </header>
 
     <div id="container"></div>
 
     <script src="food.js"></script>
     <script src="app.js"></script>
+    <script src="bundle.js"></script>
 </body>
 </html>

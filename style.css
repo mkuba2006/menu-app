@@ -1,21 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-size: 100%;
+    background: url(svg.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#line1{
+    color: white;
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+h1{
+    letter-spacing: 2px;
+    font-size: 45px;
+}
+
+input[type='text']{
+    height: 40px;
+    border-radius: 7px;
+    width: 300px;
+    border: none;
+    font-size: 15px;
+    padding: 6px 14px;
+    font-family: 'Pacifico', cursive;
+}
+#clear{
+    color: black;
+    cursor: pointer;
+    padding: 8px 6px;
+    border: 1px solid #c74040;
+    transition-duration: 0.4s;
+    border-radius: 7px;
+}
+#clear:hover{
+    color: white;
+    background-color: #c74040; 
+}
+
+#line2{
+    display: flex;
+    flex-direction: row;
+    padding: 0 100px;
+}
+
+button{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    padding: 6px 16px;
+    border: none;
+    transition-duration: 0.4s;
+}
+
+.active{
+    background-color: rgb(67, 73, 60);
+    color: white;
+
+}
+
 #container{
     margin-top: 200px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
+    margin-bottom: 200px;
 }
 
 .product{
     width: 300px;
     max-width: 300px;
-    background-color: aquamarine;
+    background-color: rgb(33, 34, 34);
     padding: 8px;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 #img_back{
     width: 100%;
@@ -26,6 +106,3 @@ img{
     height: 100%;
 }
 
-.active{
-    background-color: chartreuse;
-}
