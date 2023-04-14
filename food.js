@@ -35,7 +35,7 @@ const food = [
         id: 4,
         continent:'europe',
         country:'Spain',
-        group:'main course',
+        group:'main courses',
         name:'Paella',
         img: 'https://static.fajnegotowanie.pl/media/uploads/media_image/original/przepis/3085/paella-z-owocami-morza.jpg'
     },
@@ -51,7 +51,7 @@ const food = [
         id: 6,
         continent:'europe',
         country:'Greec',
-        group:'main course',
+        group:'main courses',
         name:'Moussaka',
         img: 'https://static.fajnegotowanie.pl/media/uploads/media_image/original/przepis/8557/moussaka.jpg'
     },
@@ -59,7 +59,7 @@ const food = [
         id: 7,
         continent:'europe',
         country:'Poland',
-        group:'main course',
+        group:'main courses',
         name:'Dumplings ',
         img: 'https://ychef.files.bbci.co.uk/976x549/p06vw6pp.jpg'
     },
@@ -67,7 +67,7 @@ const food = [
         id: 8,
         continent:'South America',
         country:'Wenezuela',
-        group:'main course',
+        group:'main courses',
         name:'Arepa',
         img: 'https://assets.aws.londynek.net/images/jdnews-lite/2719994/109423-201903041421-lg2.jpg.webp?t='
     },
@@ -75,16 +75,16 @@ const food = [
         id: 9,
         continent:'South America',
         country:'Chile',
-        group:'main course',
+        group:'main courses',
         name:'Curanto',
         img: 'https://st3.depositphotos.com/6052770/34644/i/600/depositphotos_346442220-stock-photo-famous-traditional-dish-of-the.jpg'
     },
-    {
-        id: 10,
-        continent:'South America',
-        country:'Brasil',
-        group:'main course',
-        name:'Feijoada',
-        img: 'https://www.mojegotowanie.pl/media/cache/default_view/uploads/media/recipe/0002/43/feijoada.jpg'
-    },
+    // {
+    //     id: 10,
+    //     continent:'South America',
+    //     country:'Brasil',
+    //     group:'main courses',
+    //     name:'Feijoada',
+    //     img: 'https://www.mojegotowanie.pl/media/cache/default_view/uploads/media/recipe/0002/43/feijoada.jpg'
+    // },
 ]
