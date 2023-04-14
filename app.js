@@ -5,28 +5,148 @@ const b = document.querySelectorAll('button#nat');
 const a = document.querySelectorAll('button#type');
 const clear = document.getElementById('clear');
 
+
+let nations =[];
+let groups =[];
+
+
+
+//Gdy grupy
 b.forEach(button =>{
     button.addEventListener('click',()=>{
+        console.log('DO GRUP');
         const value = button.value.toLowerCase();
         button.classList.toggle('active');
-        if(button.classList.contains('active')){
-            const fitem = foods.filter((product)=>{
-                if(product.continent.toLowerCase().includes(value)){
-                    return product;
-                }
-            });
-            foods = fitem;
-            console.log(foods);
-            render(foods);
-        }else{
-            foods = food;
-            console.log(foods);
-            render(foods)
+
+
+
+        if(groups.length===0){
+            if(button.classList.contains('active')){
+                const fitem = foods.filter((product)=>{
+                    if(product.continent.toLowerCase().includes(value)){
+                        return product;
+                    }
+                });
+                foods = fitem;
+                nations = fitem;
+                console.log(nations);
+                render(foods);
+            }else{
+                foods = food;
+                nations = [];
+                console.log(nations);
+                console.log(groups);
+                render(foods)
+            }
+        } 
+        else{
+            if(button.classList.contains('active')){
+                const fitem = groups.filter((product)=>{
+                    if(product.continent.toLowerCase().includes(value)){
+                        return product;
+                    }
+                });
+                foods = fitem;
+                console.log(nations);
+                console.log(groups);
+                nations = fitem;
+                render(foods);
+            }
+            //BLAD
+            else{
+                const fitem = groups.filter((product)=>{
+                    if(product.continent.toLowerCase().includes('')){
+                        return product;
+                    }
+                });
+                foods = fitem;
+
+                console.log(nations);
+                console.log(groups);
+                render(foods)
+            }
         }
+
     })
 })
 
+
+
+
+
+
+
+
+
+
+//Gdy kraje
+a.forEach(grp =>{
+    grp.addEventListener('click',()=>{
+        console.log('DO KRAJI');
+        const value = grp.value.toLowerCase();
+        grp.classList.toggle('active');
+
+
+
+
+        
+        if(nations.length===0){
+            if(grp.classList.contains('active')){
+                const fgroup = foods.filter((product)=>{
+                    if(product.group.toLowerCase().includes(value)){
+                        return product;
+                    }
+                });
+                foods = fgroup;
+                console.log(nations);
+                groups = fgroup;
+                render(foods);
+            }else{
+                foods = food;
+                console.log(nations);
+                groups = [];
+                render(foods)
+            }
+        }
+        
+        
+        else{                                                    //////jezeli kraje nie są 0
+            if(grp.classList.contains('active')){
+                const fgroup = nations.filter((product)=>{
+                    if(product.group.toLowerCase().includes(value)){
+                        return product;
+                    }
+                });
+                foods = fgroup;
+                groups = fgroup;
+                console.log(nations);
+                render(foods);
+            }else{
+                const fgroup = nations.filter((product)=>{
+                    if(product.group.toLowerCase().includes('')){
+                        return product;
+                    }
+                });
+                foods = fgroup;
+                console.log(nations);
+                groups = [];
+                render(foods)
+            }
+        }
+
+
+
+
+    })
+})
+
+
+
+
 clear.addEventListener('click',()=>{
+    nations =[];
+    groups =[];
+
     b.forEach(button=>{
         if(button.classList.contains('active')){
             button.classList.remove('active');
@@ -42,34 +162,6 @@ clear.addEventListener('click',()=>{
     foods = food;
     render(foods)
 })
-
-
-
-
-
-
-a.forEach(grp =>{
-    grp.addEventListener('click',()=>{
-        const value = grp.value.toLowerCase();
-        grp.classList.toggle('active');
-        if(grp.classList.contains('active')){
-            const fgroup = foods.filter((product)=>{
-                if(product.group.toLowerCase().includes(value)){
-                    return product;
-                }
-            });
-            foods = fgroup;
-            console.log(foods);
-            render(foods);
-        }else{
-            foods = food;
-            console.log(foods);
-            render(foods)
-        }
-    })
-})
-
-
 
 
 
