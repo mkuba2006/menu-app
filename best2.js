@@ -214,15 +214,17 @@ Typy.forEach(typ =>{
                 }
             }          
             else{//Kraj0 | Typ0
-                const fgroup = foods.filter((product)=>{
-                    if(product.group.toLowerCase().includes(value)){
-                        return product;
-                    }
-                });
-                foods = fgroup;
+                console.log('Kraj0 | Typ0');
+                nations =[];
+                groups =[];
+                console.log(groups);
                 console.log(nations);
-                groups = fgroup;
+                foods = food;
                 render(foods);
+                    if(foods =[]){
+                    foods = food;
+                    render(foods);
+                }
             }
         }
         console.log('wyswietlane danie');
