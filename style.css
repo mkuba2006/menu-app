@@ -61,7 +61,16 @@ input[type='text']{
     flex-direction: row;
     padding: 0 100px;
 }
-
+#opisa{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: 15px;
+    padding: 0 14px;
+    font-weight: 900;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
 button{
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
