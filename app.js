@@ -3,16 +3,10 @@ let product_container = document.getElementById('container');
 
 const Kraje = document.querySelectorAll('button#nat');
 const Typy = document.querySelectorAll('button#type');
-
-
-
-
 const clear = document.getElementById('clear');
-
 
 let nations =[];
 let groups =[];
-
 
 
 
@@ -111,8 +105,6 @@ Kraje.forEach(kraj =>{
 //klik Typ
 Typy.forEach(typ =>{
     const value = typ.value.toLowerCase();
-
-
 
 
     typ.addEventListener('click',()=>{
@@ -235,75 +227,6 @@ Typy.forEach(typ =>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 clear.addEventListener('click',()=>{
     nations =[];
     groups =[];
@@ -323,14 +246,6 @@ clear.addEventListener('click',()=>{
     foods = food;
     render(foods)
 })
-
-
-
-
-
-
-
-
 
 
 
