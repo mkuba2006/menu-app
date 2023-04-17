@@ -284,41 +284,6 @@ Typy.forEach(typ =>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 clear.addEventListener('click',()=>{
     nations =[];
     groups =[];
@@ -367,5 +332,4 @@ const render = (product) =>{
         product_container.appendChild(new_prod);
     }
 }
-
 document.onload = render(foods);
