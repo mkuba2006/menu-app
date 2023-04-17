@@ -79,12 +79,12 @@ const food = [
         name:'Curanto',
         img: 'https://st3.depositphotos.com/6052770/34644/i/600/depositphotos_346442220-stock-photo-famous-traditional-dish-of-the.jpg'
     },
-    // {
-    //     id: 10,
-    //     continent:'South America',
-    //     country:'Brasil',
-    //     group:'main courses',
-    //     name:'Feijoada',
-    //     img: 'https://www.mojegotowanie.pl/media/cache/default_view/uploads/media/recipe/0002/43/feijoada.jpg'
-    // },
+    {
+        id: 10,
+        continent:'South America',
+        country:'Brasil',
+        group:'main courses',
+        name:'Feijoada',
+        img: 'https://www.mojegotowanie.pl/media/cache/default_view/uploads/media/recipe/0002/43/feijoada.jpg'
+    },
 ]

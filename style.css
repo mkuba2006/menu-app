@@ -64,7 +64,6 @@ input[type='text']{
 #opisa{
     display: flex;
     justify-content: center;
-    text-decoration: underline;
     font-size: 15px;
     padding: 0 14px;
     font-weight: 900;
