@@ -86,9 +86,7 @@ Kraje.forEach(kraj =>{
 
 
                 // console.log('Kraj 0 | Typ 1');
-                // nations =[];
-                // console.log('grupy:' + ' ' , groups);
-                // console.log('Kraje:' + ' ' +nations.length);
+                // nations =[]; 
                 // console.log('jedzenie z typu',foods);
                 // render(foods)
             }
@@ -187,15 +185,15 @@ Typy.forEach(typ =>{
                 // }
             }
             else{//Typ 1 | Kraj 0
-                                ///TEST////////////////////////
-                                const filtrTyp2 = foods.filter((product)=>{
-                                    if(product.group.toLowerCase().includes(value)){
-                                        return product;
-                                    }
-                                });
-                                foods2=filtrTyp2;
-                                console.log('foods2',foods2);
-                                ///TEST////////////////////////
+                ///TEST////////////////////////
+                const filtrTyp2 = foods.filter((product)=>{
+                    if(product.group.toLowerCase().includes(value)){
+                        return product;
+                    }
+                 });
+                 foods2=filtrTyp2;
+                 console.log('foods2',foods2);
+                 ///TEST////////////////////////
                 console.log('Typ 1 | Kraj 0');
                 console.log('grupy:' + ' ' +groups.length);
                 console.log('Kraje:' + ' ' +nations.length);
