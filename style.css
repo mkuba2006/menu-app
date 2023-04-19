@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+
+
 body{
     margin: 0;
     background-size: 100%;
@@ -29,7 +32,14 @@ h1{
     letter-spacing: 2px;
     font-size: 45px;
 }
-
+#hh{
+    padding: 10px;
+    letter-spacing: 2px;
+    font-size: 45px;
+    background: -webkit-linear-gradient(180deg, #c11e38, #220b34);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 input[type='text']{
     height: 40px;
     border-radius: 7px;
@@ -66,6 +76,7 @@ input[type='text']{
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif;
 }
 #opisa{
     display: flex;
@@ -84,6 +95,7 @@ input[type='text']{
     padding: 6px 16px;
     margin-bottom: 25px;
     transition-duration: 0.2s;
+    margin: 5px;
 }
 
 #nations button:hover, #types button:hover{
@@ -109,6 +121,7 @@ button{
     flex-direction: row;
     gap: 20px;
     margin-bottom: 200px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .product{
@@ -119,7 +132,6 @@ button{
     border-radius: 6px;
     color: white;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
 }
 #img_back{
     width: 100%;
