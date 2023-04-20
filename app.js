@@ -4,11 +4,13 @@ let product_container = document.getElementById('container');
 const Kraje = document.querySelectorAll('button#nat');
 const Typy = document.querySelectorAll('button#type');
 const clear = document.getElementById('clear');
+const inp_txt = document.getElementById('text');
 var activeElement = document.querySelector('.active');
 
 let nations =[];
 let groups =[];
 let foods2=[];
+let founded=[]
 
 
 //klik kraj
@@ -35,8 +37,6 @@ Kraje.forEach(kraj =>{
         });
     
         kraj.classList.toggle('active');
-
-
 
 
         if(kraj.classList.contains('active')){
@@ -106,6 +106,7 @@ Kraje.forEach(kraj =>{
         console.log('aktywne kraje: ');console.log(kraj.value);
         console.log('aktywne jedzenie: '); console.log(foods);
         console.log('tak:',foods);
+        console.log('foods2',foods2);
     })
 })
 
@@ -264,6 +265,7 @@ Typy.forEach(typ =>{
         }
         console.log('jedzenie:' + ' '+ foods.length);
           console.log('tak:',foods);
+          console.log('foods2',foods2);
     })
 })
 
@@ -277,8 +279,22 @@ Typy.forEach(typ =>{
 
 
 
+inp_txt.addEventListener('change',()=>{
+    const val = inp_txt.value.toLowerCase();
+    console.log('foods2',foods);
+    const fff = foods.filter((prod)=>{
+        if(prod.name.toLowerCase().includes(val)){
+            return prod;
+        }
+    })
+    render(fff);
+})
 
 
+
+
+
+// render(foods2)
 
 
 
