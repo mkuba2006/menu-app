@@ -98,9 +98,7 @@ input[type='text']{
     margin: 5px;
 }
 
-#nations button:hover, #types button:hover{
-    background-color: #343634;
-}
+
 button{
     font: 900 15px 'Raleway', sans-serif;
     padding: 6px 16px;
@@ -108,8 +106,29 @@ button{
     transition-duration: 0.4s;
 }
 
+button::after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 10px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+/* button::after{
+    content: '';
+    position: absolute;
+    width: 82px;
+    height: 30px;
+    background-color: #75152556;
+    transform: translateX(-65px);
+    transition: 0.5s;
+} */
+button:hover:after{
+    transform: translateY(-10px);
+}
+
 .active{
-    background-color: rgb(67, 73, 60);
     color: white;
 }
 
