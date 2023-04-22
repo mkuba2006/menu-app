@@ -300,9 +300,12 @@ clear.addEventListener('click',()=>{
     })
     foods = food;
     render(foods)
-})
 
-
+    const afterElements = document.querySelectorAll('button div.af');
+    afterElements.forEach(after => {
+        after.style.bottom = '-31px';
+    });
+});
 
 
 
@@ -317,14 +320,12 @@ const render = (product) =>{
         <div id="img_back"">
             <img src="${product[i].img}"/>
         </div>
-        <div id="content">
             <div id="opis">
                 <h1 id='name'>${product[i].name}</h1>
                 <div id='continent'>${product[i].continent}</div>
                 <div id='country'>${product[i].country}</div>
                 <div id='group'>${product[i].group}</div>
             </div>
-        </div>
         `;
         product_container.appendChild(new_prod);
     }
