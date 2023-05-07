@@ -120,6 +120,7 @@ button::after {
     font-size: 0.8em;
   }
 
+  
 button:hover:after{
     transform: translateY(-10px);
 }

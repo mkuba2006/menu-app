@@ -206,6 +206,7 @@ Typy.forEach(typ =>{
                     if(product.group.toLowerCase().includes(value)){
                         return product;
                     }
+                    
                 });
                 render(filtrTyp1); 
                 foods = filtrTyp1; //////

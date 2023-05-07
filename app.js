@@ -309,6 +309,7 @@ clear.addEventListener('click',()=>{
 
 
 
+
 const render = (product) =>{
     product_container.innerHTML='';
     for(let i = 0; i < product.length; i++){

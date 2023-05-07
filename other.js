@@ -17,6 +17,7 @@ buttons.forEach(button => {
     after.style.transition = '0.3s';
     button.appendChild(after);
 
+    
     button.addEventListener('mouseenter',()=>{
 
         if (button.classList.contains('active')) {
