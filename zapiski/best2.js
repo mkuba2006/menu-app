@@ -7,6 +7,7 @@ const Typy = document.querySelectorAll('button#type');
 
 
 
+
 const clear = document.getElementById('clear');
 
 
