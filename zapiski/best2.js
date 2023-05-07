@@ -12,7 +12,7 @@ const clear = document.getElementById('clear');
 
 let nations =[];
 let groups =[];
-let foods2=[];
+
 
 
 
@@ -47,15 +47,14 @@ Kraje.forEach(kraj =>{
         if(kraj.classList.contains('active')){
             if(activeButtonCount>0){ //Kraj 1 | Typ 1
                 console.log('Kraj 1 | Typ 1 ');
-                console.log('grupy:' + ' ' +groups.length);
-                console.log('Kraje:' + ' ' +nations.length);
-                const filtrKraj1 = foods2.filter((product)=>{
+                console.log(groups);
+                console.log(nations);
+                const filtrKraj1 = groups.filter((product)=>{
                     if(product.continent.toLowerCase().includes(value)){
                         return product;
                     }
                 });
                 render(filtrKraj1); 
-                console.log('foods2',foods2);
                 foods = filtrKraj1 //////
             }
             else{//Kraj 1 | Typ 0
@@ -65,51 +64,35 @@ Kraje.forEach(kraj =>{
                         return product;
                     }
                 });
-                console.log('grupy:' + ' ' +groups.length);
-                console.log('Kraje:' + ' ' +nations.length);
+                console.log(groups);
+                console.log(nations);
                 render(filtrKraj1);  
-                foods = filtrKraj1; //////
+                foods = filtrKraj1 //////
             }
         }
         else{
             if(activeButtonCount>0){ //Kraj 0 | Typ 1
-                if(foods=[]){
-                    console.log(foods);
-                    console.log('foods2',foods2);
-                    render(foods2);
-                } else{
-                    console.log('Kraj 0 | Typ 1');
-                    // nations =[];
-                    console.log('grupy:' + ' ' , groups);
-                    console.log('Kraje:' + ' ' +nations.length);
-                    console.log('jedzenie z typu',foods);
-                    render(foods)
-                }
-
-
-
-                // console.log('Kraj 0 | Typ 1');
-                // nations =[];
-                // console.log('grupy:' + ' ' , groups);
-                // console.log('Kraje:' + ' ' +nations.length);
-                // console.log('jedzenie z typu',foods);
-                // render(foods)
+                console.log('Kraj 0 | Typ 1');
+                nations =[];
+                console.log(groups);
+                console.log(nations);
+                render(groups)
+                foods = groups; ///////
             }
             
             else{//Kraj0 | Typ0
-                console.log('Kraj 0 | Typ 0');
+                console.log('Kraj0 | Typ0');
                 nations =[];
                 groups =[];
                 foods = food;
-                console.log('grupy:' + ' ' +groups.length);
-                console.log('Kraje:' + ' ' +nations.length);
+                console.log(groups);
+                console.log(nations);
                 render(foods);
                 foods = food; ///////
             }
         }
-        console.log('wyswietlane danie');console.log(foods);
-        console.log('aktywne kraje: ');console.log(kraj.value);
-        console.log('aktywne jedzenie: '); console.log(foods);
+        console.log('wyswietlane danie');
+        console.log(foods);
     })
 })
 
@@ -140,12 +123,13 @@ Typy.forEach(typ =>{
         });
         groups = filtrTyp 
         let activeButtonCount = 0;
-        Kraje.forEach(button => {
+        let activeButton;
+        Typy.forEach(button => {
           if (button.classList.contains('active')) {
             activeButtonCount++;
+            activeButton = button;
           }
         });
-        console.log('Czy Kraje klikniete:', activeButtonCount);
         typ.classList.toggle('active');
 
         
@@ -155,53 +139,29 @@ Typy.forEach(typ =>{
         if(typ.classList.contains('active')){
             if(activeButtonCount>0){ //Typ 1 | Kraj 1
                 console.log('Typ 1 | Kraj 1');
+                const filtrTyp1 = foods.filter((product)=>{
+                    if(product.group.toLowerCase().includes(value)){
+                        return product;
+                    }
+                });
+                console.log(groups);
                 console.log(nations);
-                const filtrTyp1 = nations.filter((product)=>{
-                    if(product.group.toLowerCase().includes(value)){
-                        return product;
-                    }
-                });
-                foods=food;
-                ///TEST////////////////////////
-                const filtrTyp2 = foods.filter((product)=>{
-                    if(product.group.toLowerCase().includes(value)){
-                        return product;
-                    }
-                });
-
-                // foods = filtrTyp2;
-                console.log('foods2',foods2);
-                ///TEST////////////////////////
-                console.log('grupy:' + ' ' ,groups);
-
-                console.log('Kraje:' + ' ' ,nations);
                 render(filtrTyp1);  
-                foods2=filtrTyp2;
-    
-                console.log('foods2',foods2);
-                // if(foods =[]){
-                //     foods = food;
-                //     const filtrTyp1 = foods.filter((product)=>{
-                //         if(product.group.toLowerCase().includes(value)){
-                //             return product;
-                //         }
-                //     });
-                //     render(filtrTyp1);
-                // }
+                foods = filtrTyp1; //////
+                if(foods =[]){
+                    foods = food;
+                    const filtrTyp1 = foods.filter((product)=>{
+                        if(product.group.toLowerCase().includes(value)){
+                            return product;
+                        }
+                    });
+                    render(filtrTyp1);
+                }
             }
             else{//Typ 1 | Kraj 0
-                                ///TEST////////////////////////
-                                const filtrTyp2 = foods.filter((product)=>{
-                                    if(product.group.toLowerCase().includes(value)){
-                                        return product;
-                                    }
-                                });
-                                foods2=filtrTyp2;
-                                console.log('foods2',foods2);
-                                ///TEST////////////////////////
                 console.log('Typ 1 | Kraj 0');
-                console.log('grupy:' + ' ' +groups.length);
-                console.log('Kraje:' + ' ' +nations.length);
+                console.log(groups);
+                console.log(nations);
                 const filtrTyp1 = nations.filter((product)=>{
                     if(product.group.toLowerCase().includes(value)){
                         return product;
@@ -218,7 +178,6 @@ Typy.forEach(typ =>{
                     });
                     render(filtrTyp1);
                 }
-                
             }
         }
         else{
@@ -227,7 +186,7 @@ Typy.forEach(typ =>{
                 groups =[];
                 if(nations.length === 0){
 
-                    // foods = food;
+                    foods = food;
                     console.log('= 0');
                     render(foods);
                 } 
@@ -244,6 +203,7 @@ Typy.forEach(typ =>{
                     foods = nations;
                     const filtrTyp1 = foods.filter((product)=>{
                         if(product.continent.toLowerCase().includes(activeButton)){
+                            console.log(product);
                             return product;
                         }
                     });
@@ -254,18 +214,21 @@ Typy.forEach(typ =>{
                 }
             }          
             else{//Kraj0 | Typ0
-                foods = food;
-                groups =[];
-                //
-                nations=[];
-                //
                 console.log('Kraj0 | Typ0');
-                console.log('grupy:' + ' ' +groups.length);
-                console.log('Kraje:' + ' ' +nations.length);
+                nations =[];
+                groups =[];
+                console.log(groups);
+                console.log(nations);
+                foods = food;
                 render(foods);
+                    if(foods =[]){
+                    foods = food;
+                    render(foods);
+                }
             }
         }
-        console.log('jedzenie:' + ' '+ foods.length);
+        console.log('wyswietlane danie');
+        console.log(foods);
     })
 })
 
@@ -346,15 +309,14 @@ Typy.forEach(typ =>{
 clear.addEventListener('click',()=>{
     nations =[];
     groups =[];
-    nations =[];
-    foods2 =[];
-    Kraje.forEach(button=>{
+
+    b.forEach(button=>{
         if(button.classList.contains('active')){
             button.classList.remove('active');
         }
         foods = food;
     })
-    Typy.forEach(button=>{
+    a.forEach(button=>{
         if(button.classList.contains('active')){
             button.classList.remove('active');
         }

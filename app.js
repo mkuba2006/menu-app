@@ -4,13 +4,11 @@ let product_container = document.getElementById('container');
 const Kraje = document.querySelectorAll('button#nat');
 const Typy = document.querySelectorAll('button#type');
 const clear = document.getElementById('clear');
-const inp_txt = document.getElementById('text');
 var activeElement = document.querySelector('.active');
 
 let nations =[];
 let groups =[];
 let foods2=[];
-let founded=[]
 
 
 //klik kraj
@@ -39,11 +37,13 @@ Kraje.forEach(kraj =>{
         kraj.classList.toggle('active');
 
 
+
+
         if(kraj.classList.contains('active')){
             if(activeButtonCount>0){ //Kraj 1 | Typ 1
-                // console.log('Kraj 1 | Typ 1 ');
-                // console.log('grupy:' + ' ' +groups.length);
-                // console.log('Kraje:' + ' ' +nations.length);
+                console.log('Kraj 1 | Typ 1 ');
+                console.log('grupy:' + ' ' +groups.length);
+                console.log('Kraje:' + ' ' +nations.length);
                 const filtrKraj1 = foods2.filter((product)=>{
                     if(product.continent.toLowerCase().includes(value)){
                         return product;
@@ -51,18 +51,18 @@ Kraje.forEach(kraj =>{
                 });
                 foods=filtrKraj1;
                 render(foods); 
-                // console.log('foods2',foods2);
+                console.log('foods2',foods2);
                 // foods = filtrKraj1 //////
             }
             else{//Kraj 1 | Typ 0
-                // console.log('Kraj 1 | Typ 0');
+                console.log('Kraj 1 | Typ 0');
                 const filtrKraj1 = foods.filter((product)=>{
                     if(product.continent.toLowerCase().includes(value)){
                         return product;
                     }
                 });
-                // console.log('grupy:' + ' ' +groups.length);
-                // console.log('Kraje:' + ' ' +nations.length);
+                console.log('grupy:' + ' ' +groups.length);
+                console.log('Kraje:' + ' ' +nations.length);
                 foods = filtrKraj1; //////
                 render(foods);  
                 // foods = filtrKraj1; //////
@@ -71,15 +71,15 @@ Kraje.forEach(kraj =>{
         else{
             if(activeButtonCount>0){ //Kraj 0 | Typ 1
                 if(foods=[]){
-                    // console.log(foods);
-                    // console.log('foods2',foods2);
+                    console.log(foods);
+                    console.log('foods2',foods2);
                     render(foods2);
                 } else{
-                    // console.log('Kraj 0 | Typ 1');
+                    console.log('Kraj 0 | Typ 1');
                     // nations =[];
-                    // console.log('grupy:' + ' ' , groups);
-                    // console.log('Kraje:' + ' ' +nations.length);
-                    // console.log('jedzenie z typu',foods);
+                    console.log('grupy:' + ' ' , groups);
+                    console.log('Kraje:' + ' ' +nations.length);
+                    console.log('jedzenie z typu',foods);
                     render(foods)
                 }
 
@@ -92,21 +92,20 @@ Kraje.forEach(kraj =>{
             }
             
             else{//Kraj0 | Typ0
-                // console.log('Kraj 0 | Typ 0');
+                console.log('Kraj 0 | Typ 0');
                 nations =[];
                 groups =[];
                 foods = food;
-                // console.log('grupy:' + ' ' +groups.length);
-                // console.log('Kraje:' + ' ' +nations.length);
+                console.log('grupy:' + ' ' +groups.length);
+                console.log('Kraje:' + ' ' +nations.length);
                 render(foods);
                 foods = food; ///////
             }
         }
-        // console.log('wyswietlane danie');console.log(foods);
-        // console.log('aktywne kraje: ');console.log(kraj.value);
-        // console.log('aktywne jedzenie: '); console.log(foods);
-        // console.log('tak:',foods);
-        // console.log('foods2',foods2);
+        console.log('wyswietlane danie');console.log(foods);
+        console.log('aktywne kraje: ');console.log(kraj.value);
+        console.log('aktywne jedzenie: '); console.log(foods);
+        console.log('tak:',foods);
     })
 })
 
@@ -140,7 +139,7 @@ Typy.forEach(typ =>{
             activeButtonCount++;
           }
         });
-        // console.log('Czy Kraje klikniete:', activeButtonCount);
+        console.log('Czy Kraje klikniete:', activeButtonCount);
         typ.classList.toggle('active');
 
         
@@ -149,21 +148,24 @@ Typy.forEach(typ =>{
 
         if(typ.classList.contains('active')){
             if(activeButtonCount>0){ //Typ 1 | Kraj 1
-                // console.log('Typ 1 | Kraj 1');
-                // console.log(nations);
+                console.log('Typ 1 | Kraj 1');
+                console.log(nations);
                 const filtrTyp1 = nations.filter((product)=>{
                     if(product.group.toLowerCase().includes(value)){
                         return product;
                     }
                 });
                 foods=food;
+                ///TEST////////////////////////
                 const filtrTyp2 = foods.filter((product)=>{
                     if(product.group.toLowerCase().includes(value)){
                         return product;
                     }
                 });
 
-                // console.log('foods2',foods2);
+                // foods = filtrTyp2;
+                console.log('foods2',foods2);
+                ///TEST////////////////////////
                 console.log('grupy:' + ' ' ,groups);
                 console.log('Kraje:' + ' ' ,nations);
                 // render(filtrTyp1);  
@@ -171,26 +173,37 @@ Typy.forEach(typ =>{
                 render(foods);  
                 foods2=filtrTyp2;
     
-                // console.log('foods2',foods2);
+                console.log('foods2',foods2);
+                // if(foods =[]){
+                //     foods = food;
+                //     const filtrTyp1 = foods.filter((product)=>{
+                //         if(product.group.toLowerCase().includes(value)){
+                //             return product;
+                //         }
+                //     });
+                //     render(filtrTyp1);
+                // }
             }
             else{//Typ 1 | Kraj 0
+                ///TEST////////////////////////
                 const filtrTyp2 = foods.filter((product)=>{
                     if(product.group.toLowerCase().includes(value)){
                         return product;
                     }
                  });
                  foods2=filtrTyp2;
-                //  console.log('foods2',foods2);
-                // console.log('Typ 1 | Kraj 0');
-                // console.log('grupy:' + ' ' +groups.length);
-                // console.log('Kraje:' + ' ' +nations.length);
+                 console.log('foods2',foods2);
+                 ///TEST////////////////////////
+                console.log('Typ 1 | Kraj 0');
+                console.log('grupy:' + ' ' +groups.length);
+                console.log('Kraje:' + ' ' +nations.length);
                 const filtrTyp1 = nations.filter((product)=>{
                     if(product.group.toLowerCase().includes(value)){
                         return product;
                     }
                 });
                 render(filtrTyp1); 
-                foods = filtrTyp1;
+                foods = filtrTyp1; //////
                 if(foods.length ===0){
                     foods = food;
                     const filtrTyp1 = foods.filter((product)=>{
@@ -207,10 +220,12 @@ Typy.forEach(typ =>{
         }
         else{
             if(activeButtonCount>0){ //Typ 0 | Kraj 1
-            //     console.log('Typ 0 | Kraj 1 ');
+                console.log('Typ 0 | Kraj 1 ');
                 groups =[];
                 if(nations.length === 0){
-                    // console.log('= 0');
+
+                    // foods = food;
+                    console.log('= 0');
                     render(foods);
                 } 
 
@@ -220,7 +235,7 @@ Typy.forEach(typ =>{
                     Kraje.forEach(button => {
                       if (button.classList.contains('active')) {
                         activeButton = button.value.toLowerCase();
-                        // console.log( button.value.toLowerCase());
+                        console.log( button.value.toLowerCase());
                       }
                     });
                     foods = nations;
@@ -231,24 +246,24 @@ Typy.forEach(typ =>{
                     });
                     foods = filtrTyp1;
                     render(foods);
-                    // console.log('= 0nieee 0');
-                    // console.log(activeButton);
+                    console.log('= 0nieee 0');
+                    console.log(activeButton);
                 }
             }          
             else{//Kraj0 | Typ0
                 foods = food;
                 groups =[];
+                //
                 nations=[];
                 //
-                // console.log('Kraj0 | Typ0');
-                // console.log('grupy:' + ' ' +groups.length);
-                // console.log('Kraje:' + ' ' +nations.length);
+                console.log('Kraj0 | Typ0');
+                console.log('grupy:' + ' ' +groups.length);
+                console.log('Kraje:' + ' ' +nations.length);
                 render(foods);
             }
         }
-        // console.log('jedzenie:' + ' '+ foods.length);
-        // console.log('tak:',foods);
-        // console.log('foods2',foods2);
+        console.log('jedzenie:' + ' '+ foods.length);
+          console.log('tak:',foods);
     })
 })
 
@@ -262,22 +277,8 @@ Typy.forEach(typ =>{
 
 
 
-inp_txt.addEventListener('change',()=>{
-    const val = inp_txt.value.toLowerCase();
-    console.log('foods2',foods);
-    const fff = foods.filter((prod)=>{
-        if(prod.name.toLowerCase().includes(val)){
-            return prod;
-        }
-    })
-    render(fff);
-})
 
 
-
-
-
-// render(foods2)
 
 
 
@@ -300,12 +301,9 @@ clear.addEventListener('click',()=>{
     })
     foods = food;
     render(foods)
+})
 
-    const afterElements = document.querySelectorAll('button div.af');
-    afterElements.forEach(after => {
-        after.style.bottom = '-31px';
-    });
-});
+
 
 
 
@@ -320,12 +318,14 @@ const render = (product) =>{
         <div id="img_back"">
             <img src="${product[i].img}"/>
         </div>
+        <div id="content">
             <div id="opis">
                 <h1 id='name'>${product[i].name}</h1>
                 <div id='continent'>${product[i].continent}</div>
                 <div id='country'>${product[i].country}</div>
                 <div id='group'>${product[i].group}</div>
             </div>
+        </div>
         `;
         product_container.appendChild(new_prod);
     }
