@@ -2,45 +2,40 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
 </head>
 <body>
     
     <header>
-        <h1 id="hh">Food App</h1>
+        <h1>Food App</h1>
         <input id="text" type="text" placeholder="Search by name...">
         <div id="clear">Clear the filters</div>
     </header>
-    
-        <div id="warn">❗️If you find error, click Top-Right button to reset❗️</div>
+        <div id="warn">If you find error, click Top-Right button to reset</div>
         <div id="line2">
             <div id="nations">
                 <div id="opisa">First, choose nation:</div>
                 <br>
-                <button class="Nat1" id="nat" value="Europe"><span>Europe</span></button>
-                <button id="nat" value="North America"><span>North America</span></button>
-                <button id="nat" value="South America"><span>South America</span></button>
-                <button id="nat" value="Asia"><span>Asia</span></button>
-                <button id="nat" value="Australia"><span>Australia</span></button>
+                <button class="Nat1" id="nat" value="Europe">Europe</button>
+                <button id="nat" value="North America">North America</button>
+                <button id="nat" value="South America">South America</button>
+                <button id="nat" value="Asia">Asia</button>
+                <button id="nat" value="Australia">Australia</button>
             </div>
             <div id="types">
                 <div id="opisa">Second, choose type:</div>
                 <br>
-                <button class="Typ1" id="type" value="Fast Food"><span>Fast Food</span></button>
-                <button id="type" value="main courses"><span>main courses</span></button>
-                <button id="type" value="soups"><span>soups</span></button>
+                <button class="Typ1" id="type" value="Fast Food">Fast Food</button>
+                <button id="type" value="main courses">main courses</button>
+                <button id="type" value="soups">soups</button>
             </div>
         </div>
 
     <div id="container"></div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     <script src="food.js"></script>
     <script src="app.js"></script>
-    <script src="other.js"></script>
 </body>
 </html>
