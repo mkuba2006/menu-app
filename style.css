@@ -29,7 +29,8 @@ header {
 
 h1{
     letter-spacing: 2px;
-    font-size: 45px;
+    font-size: 40px;
+    height: 80px;
 }
 
 input[type='text']{
@@ -104,7 +105,7 @@ button{
     padding: 6px 16px;
     border: none;
     transition-duration: 0.4s;
-
+    max-height: 30px;
 }
 button span {
     position: relative;
@@ -159,6 +160,14 @@ img{
     height: 100%;
 }
 
+h2,h3{
+    margin: 0;
+    font-weight: 400;
+}
+h2{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
 @media only screen and (max-width: 1000px) {
     header {
       flex-direction: column;

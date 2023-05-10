@@ -22,7 +22,6 @@ buttons.forEach(button => {
 
         if (button.classList.contains('active')) {
             after.style.bottom = '-15px';
-            console.log('active');
         }else{
             after.style.bottom = '-15px';
         }
@@ -30,7 +29,6 @@ buttons.forEach(button => {
     button.addEventListener('mouseleave',()=>{
         if (button.classList.contains('active')) {
             after.style.bottom = '0px';
-            console.log('active');
         }else{
             after.style.bottom = '-31px';
         }
@@ -38,7 +36,6 @@ buttons.forEach(button => {
     button.addEventListener('click',()=>{
         if (button.classList.contains('active')) {
             after.style.bottom = '0px';
-            console.log('active');
         }else{
             after.style.bottom = '-31px';
         }
