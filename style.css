@@ -27,11 +27,6 @@ header {
 
 
 
-h1{
-    letter-spacing: 2px;
-    font-size: 40px;
-    height: 80px;
-}
 
 input[type='text']{
     height: 40px;
@@ -144,7 +139,7 @@ button:hover:after{
 .product{
     width: 300px;
     max-width: 300px;
-    background-color: rgb(33, 34, 34);
+    background-color: rgb(43, 44, 44);
     padding: 8px;
     border-radius: 6px;
     color: white;
@@ -158,11 +153,20 @@ button:hover:after{
 img{
     width: 100%;
     height: 100%;
+    border-radius: 7px;
 }
 
 h2,h3{
     margin: 0;
     font-weight: 400;
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    font-size: 40px;
+    height: 80px;
 }
 h2{
     font-weight: 700;

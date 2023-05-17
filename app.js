@@ -188,7 +188,7 @@ Typy.forEach(typ =>{
 
 
 
-itext.addEventListener('change', ()=>{
+itext.addEventListener('input', ()=>{
     let ival = itext.value;
 
     const fff = foods.filter(product=>{
