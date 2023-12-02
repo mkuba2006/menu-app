@@ -5,40 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
 </head>
 <body>
     
     <header>
-        <h1 id="hh">Food App</h1>
-        <input id="text" type="text" placeholder="Search by name...">
-        <div id="clear">Clear the filters</div>
+        <div id="one">
+            <h1 id="hh"><i>F</i><i>o</i><i>d</i><i>i</i><i>e</i><i>H</i><i>u</i><i>b</i></h1>
+        </div>
     </header>
-    
-        <div id="warn">If you find error, click Top-Right button to reset</div>
-        <div id="line2">
-            <div id="nations">
-                <div id="opisa">First, choose nation:</div>
-                <br>
-                <button class="Nat1" id="nat" value="Europe"><span>Europe</span></button>
-                <button id="nat" value="North America"><span>North America</span></button>
-                <button id="nat" value="South America"><span>South America</span></button>
-                <button id="nat" value="Asia"><span>Asia</span></button>
-                <button id="nat" value="Australia"><span>Australia</span></button>
-                <button id="nat" value="Africa"><span>Africa</span></button>
+
+
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> 
+                <img src="https://restaurant.dineout.pl/static/media/hero-image-2.077137dd.jpg" class="image"/>
             </div>
-            <div id="types">
-                <div id="opisa">Second, choose type:</div>
-                <br>
-                <button class="Typ1" id="type" value="Fast Food"><span>Fast Food</span></button>
-                <button id="type" value="main courses"><span>main courses</span></button>
-                <button id="type" value="soups"><span>soups</span></button>
-                <button id="type" value="desserts"><span>desserts</span></button>
+            <div class="swiper-slide">
+                <img src="https://www.houstoncitybook.com/media-library/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbWFnZSI6Imh0dHBzOi8vYXNzZXRzLnJibC5tcy8yNTgyMTI0Mi9vcmlnaW4uanBnIiwiZXhwaXJlc19hdCI6MTczODUzNDg5N30.UgE5cwdOcW8mrgHY5SA0kHlvvEJQxlklndm5ZBbZ-I0/image.jpg?width=1245&height=700&quality=85&coordinates=0%2C313%2C0%2C266" class="image"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://assets.editorial.aetnd.com/uploads/2014/08/canned-food-gettyimages-95480270.jpg" class="image"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://github.com/mkuba2006/hosted-website/blob/master/projects/foodapp/wepik.jpeg?raw=true" class="image"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.portobay.com/remote.axd/pbaybucket.s3.amazonaws.com/media/2853029/tcb_igo_coastlinefish_2_baixa.jpg?mode=crop&center=0.24489795918367346,0.51020408163265307&width=1920&height=823" class="image"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/yftpxdgn/2589fa0c-a6f1-4cbc-bc3c-9919932cec9b.png" class="image"/>
             </div>
         </div>
+        <div class="opis">
+            <h1>Welcome to FodieHub</h1>
+            <h3>You will find every dish from all over the world here</h3>
+            <a href="#container">
+                <button id="see">See more</button>
+            </a>
+        </div>
+    </div>
 
-    <div id="container"></div>
+
+    <div id="line2">
+        <div id="f_div">
+            <select id="natSelect">
+                <option value="" selected>Select an option</option>
+                <option value="Europe">Europe</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Asia">Asia</option>
+                <option value="Australia">Australia</option>
+                <option value="Africa">Africa</option>
+            </select>
+        
+            <select id="typeSelect">
+                <option value="" selected>Select an option</option>
+                <option value="Fast Food">Fast Food</option>
+                <option value="main courses">Main Courses</option>
+                <option value="soups">Soups</option>
+                <option value="desserts">Desserts</option>
+            </select>
+        </div>
+        <div id="sec_div">
+            <input id="text" type="text" placeholder="Search by name...">
+            <div id="clear">Clear the filters</div>
+        </div>
+    </div>
+
+    <section id="container" class="ctm">
+        
+    </section>
+
+
+    <section id="contact">
+        <div id="container">
+            <div id="ones">
+                <div id="fform">
+                    <h1>Message me💬</h1>
+                    <form action="https://formsubmit.co/9921724cfdd2e5dab1fe1196b9c58239 " method="POST">
+                            <input type="text" id="name_form" class="inp"  name="name" required placeholder="enter your name:">
+                    
+                            <input type="email" id="email_form" class="inp" name="email" required placeholder="enter your mail:">
+                        
+                            <textarea id="content_form" rows="3" class="inp" name="message" required placeholder="content:"></textarea>
+    
+                        <button class="slide" type="submit">Send</button>
+                    </form>
+                </div>
+                <div id="media">
+                    <h1>You can find me on <span>social media</span>:</h1>
+                    <ul>
+                        <a href="https://www.facebook.com/profile.php?id=100042699441638"><li>Facebook</li></a>
+                        <a href="https://www.instagram.com/jakub_myrta/"><li>Instagram</li></a>
+                        <a href="https://www.linkedin.com/in/jakub-myrta-7525a6261/"><li>Linkedin</li></a>
+                        <a href="https://github.com/mkuba2006"><li>GitHub</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div id="prawa">
+                Copyright © 2023 <span> JM*SUI</span>. All rights reserved.
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
     <script src="food.js"></script>
     <script src="app.js"></script>
-    <script src="other.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 100,
+          centeredSlides: true,
+          autoplay: {
+            delay: 4500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: false,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>

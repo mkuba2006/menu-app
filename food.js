@@ -5,7 +5,7 @@ const food = [
         country:'Italy',
         group:'main courses',
         name:'Pizza',
-        img: 'https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/pizza-sycylijska.jpg'
+        img: 'https://static.takeaway.com/images/chains/pl/mastergrupa_stopiatka/products/pizza_farelka.png?timestamp=1693159715'
     },
     {
         id: 1,
@@ -13,7 +13,7 @@ const food = [
         country:'Turkey',
         group:'Fast Food',
         name:'Kebab',
-        img: 'https://www.pyszne.pl/foodwiki/uploads/sites/7/2018/03/kebab-2.jpg'
+        img: 'https://www.hammurabielk.eu/wp-content/uploads/2021/12/Bez-nazwy-11.png'
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ const food = [
         country:'Poland',
         group:'soups',
         name:'Żurek',
-        img: 'https://szefpoleca.pl/wp-content/uploads/2022/10/tradycyjny-zurek-na-zakwasie-900x575.webp'
+        img: 'https://www.jemyjemy.com/images/zupy/zurek/talerz.png'
     },
     {
         id: 3,
@@ -29,7 +29,7 @@ const food = [
         country:'Japan',
         group:'soups',
         name:'Ramen',
-        img: 'https://static.fajnegotowanie.pl/media/uploads/media_image/original/przepis/811/ramen.jpg'
+        img: 'https://www.pandaramen.pl/wp-content/uploads/2021/05/paitan.png'
     },
     {
         id: 4,
@@ -37,7 +37,7 @@ const food = [
         country:'Spain',
         group:'main courses',
         name:'Paella',
-        img: 'https://static.fajnegotowanie.pl/media/uploads/media_image/original/przepis/3085/paella-z-owocami-morza.jpg'
+        img: 'https://fotw.com.au/wp-content/uploads/2021/07/FOTW_Recipe_SpanishPaellaWithChickenAndPrawns_fotw00302.png'
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ const food = [
         country:'USA',
         group:'Fast Food',
         name:'Burger',
-        img: 'https://cdn.galleries.smcloud.net/t/galleries/gf-fCGi-H1PR-KYKb_amerykanski-burger-z-francuskim-sosem-jak-zrobic-664x442-nocrop.jpg'
+        img: 'https://www.burgerandsauce.com/wp-content/uploads/2021/02/burger-and-sauce-beef-burger-3000px2-1-768x768.png'
     },
     {
         id: 6,
@@ -53,7 +53,7 @@ const food = [
         country:'Greec',
         group:'main courses',
         name:'Moussaka',
-        img: 'https://static.fajnegotowanie.pl/media/uploads/media_image/original/przepis/8557/moussaka.jpg'
+        img: 'https://rootkitchen.uk/cdn/shop/products/moussaka-942515.png?v=1658210958'
     },
     {
         id: 7,
@@ -61,7 +61,7 @@ const food = [
         country:'Poland',
         group:'main courses',
         name:'Dumplings ',
-        img: 'https://ychef.files.bbci.co.uk/976x549/p06vw6pp.jpg'
+        img: 'https://craftyramen.com/cdn/shop/files/Dumplings_Floating_1080x1080_fe7dbab3-f1ab-49e9-87f0-10367626f763.png?v=1693416529'
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ const food = [
         country:'Wenezuela',
         group:'main courses',
         name:'Arepa',
-        img: 'https://assets.aws.londynek.net/images/jdnews-lite/2719994/109423-201903041421-lg2.jpg.webp?t='
+        img: 'https://i.pinimg.com/originals/53/a9/34/53a934488a996b3232da2ee34108da0d.png'
     },
     {
         id: 9,
@@ -77,7 +77,7 @@ const food = [
         country:'Chile',
         group:'main courses',
         name:'Curanto',
-        img: 'https://st3.depositphotos.com/6052770/34644/i/600/depositphotos_346442220-stock-photo-famous-traditional-dish-of-the.jpg'
+        img: 'https://domicilios116.carneslossauces.com/wp-content/uploads/2020/09/Cazuela-de-Mariscos_Mesa-de-trabajo-1-300x300.png'
     },
     {
         id: 10,
@@ -85,7 +85,7 @@ const food = [
         country:'Brasil',
         group:'main courses',
         name:'Feijoada',
-        img: 'https://www.mojegotowanie.pl/media/cache/default_view/uploads/media/recipe/0002/43/feijoada.jpg'
+        img: 'https://vapza.vteximg.com.br/arquivos/ids/155604/bowl-feijoada.png?v=637256854531270000'
     },
     {
         id: 11,
@@ -93,7 +93,7 @@ const food = [
         country: 'Ethiopia',
         group: 'main courses',
         name: 'Injera with Wot',
-        img: 'https://live.staticflickr.com/65535/46978019654_dd344b3195_b.jpg'
+        img: 'https://static.wixstatic.com/media/71ec36_da2b17c954364773bbcb2a27368a1664~mv2.png/v1/fill/w_560,h_562,al_c,lg_1,q_85,enc_auto/2qw1w8tvbko4wgk8g0g4owggw2e7nwn483ujoc0s80wwc4wsw4c2a3k5ms3rscos8gsokwkkowo.png'
       },
       {
         id: 12,
@@ -101,7 +101,7 @@ const food = [
         country: 'India',
         group: 'main courses',
         name: 'Butter Chicken',
-        img: 'https://na-talerzu.pl/wp-content/uploads/2021/11/Butter-chicken-9867.jpg'
+        img: 'https://www.karimsnewtown.com/wp-content/uploads/2021/12/Butter_Chicken-1.png'
       },
       {
         id: 13,
@@ -109,7 +109,7 @@ const food = [
         country: 'Peru',
         group: 'main courses',
         name: 'Ceviche',
-        img: 'https://blix.pl/gotuj/wp-content/uploads/2018/11/ceviche-ryb-po-peruwia%C5%84sku.jpg'
+        img: 'https://elsupermarkets.com/wp-content/uploads/2022/03/My-diet-3.png'
       },
       {
         id: 14,
@@ -117,7 +117,7 @@ const food = [
         country: 'France',
         group: 'main courses',
         name: 'Boeuf Bourguignon',
-        img: 'https://food-images.files.bbci.co.uk/food/recipes/boeuf_bourguignon_25475_16x9.jpg'
+        img: 'https://epicier.ca/wp-content/uploads/2022/04/boeuf_bourguignon04.png'
       },
       {
         id: 15,
@@ -125,7 +125,7 @@ const food = [
         country: 'China',
         group: 'main courses',
         name: 'Kung Pao Chicken',
-        img: 'https://leitesculinaria.com/wp-content/uploads/2020/06/kung-pao-chicken-fp.jpg'
+        img: 'https://png.pngtree.com/png-clipart/20230419/ourmid/pngtree-a-steaming-plate-of-kung-pao-chicken-png-image_6711247.png'
       },
       {
         id: 16,
@@ -133,7 +133,7 @@ const food = [
         country:'Greece',
         group:'appetizers',
         name:'Tzatziki',
-        img: 'https://zielonywagon.pl/wp-content/uploads/2021/11/sos-tzatziki.jpeg'
+        img: 'https://popmenucloud.com/cdn-cgi/image/width=1920,height=1920,format=auto,fit=scale-down/xzltskuo/16ad5b63-a621-49bd-8171-3cb8bfa6ea5e.png'
     },
     {
         id: 17,
@@ -141,7 +141,7 @@ const food = [
         country:'Morocco',
         group:'main courses',
         name:'Tagine',
-        img: 'https://s3.przepisy.pl/przepisy3ii/img/variants/800x0/warzywa-tagine-09485755921.jpg'
+        img: 'https://uploads-ssl.webflow.com/5eef57db89bb1904bcc0af61/5f74a4ff0eec21067248f414_VEGETABLES-TAGINE.png'
     },
     {
         id: 18,
@@ -149,7 +149,7 @@ const food = [
         country:'Mexico',
         group:'main courses',
         name:'Tacos al Pastor',
-        img: 'https://www.culinaryhill.com/wp-content/uploads/2022/12/Tacos-al-Pastor-Culinary-Hill-1200x800-1.jpg'
+        img: 'https://cateringtasteboutique.com/cdn/shop/files/Fotos-Catering-Pag-Web_0003_Capa-1_600x.png?v=1693937585'
     },
     {
         id: 19,
@@ -157,7 +157,7 @@ const food = [
         country:'France',
         group:'desserts',
         name:'Crème brûlée',
-        img: 'https://keto-mojo.com/wp-content/uploads/2020/03/Keto-Creme-Brulee.jpg'
+        img: 'https://clyrolinx.co.za/wp-content/uploads/2020/09/Creme-brulee.png'
     },
     {
         id: 20,
@@ -165,7 +165,7 @@ const food = [
         country:'Australia',
         group:'main courses',
         name:'Fish and Chips',
-        img: 'https://images.immediate.co.uk/production/volatile/sites/30/2021/01/Next-level-fish-and-chips-f0ad0c4.jpg?resize=768,574'
+        img: 'https://jbistro.sg/wp-content/uploads/2021/05/fish-chips.png'
     },
     {
         id: 21,
@@ -173,7 +173,7 @@ const food = [
         country:'Thailand',
         group:'soups',
         name:'Tom Yum Goong',
-        img: 'https://i2.wp.com/seonkyounglongest.com/wp-content/uploads/2021/03/Tom-Yum-07-mini.jpg?fit=1000%2C667&ssl=1'
+        img: 'https://thaiexpress.ca/wp-content/uploads/2023/08/tom-yum-soup-1.png'
     },
     {
         id: 22,
@@ -181,7 +181,7 @@ const food = [
         country:'Nigeria',
         group:'main courses',
         name:'Jollof Rice',
-        img: 'https://www.sainsburysmagazine.co.uk/uploads/media/2400x1800/08/12258-jollof-rice.jpg?v=1-0'
+        img: 'https://mamaashanti.co.ke/wp-content/uploads/2022/06/Jollof-rice.png'
     },
     {
         id: 23,
@@ -189,7 +189,7 @@ const food = [
         country:'Australia',
         group:'desserts',
         name:'Pavlova',
-        img: 'https://akademiatortu.pl/wp-content/uploads/2021/10/Akademia_Tortu_Beza_Pavlova.png.webp'
+        img: 'https://www.anastate.ro/storage/products/torturi/tort-pavlova/thumbs/tort-pavlova_1630922893_0.png'
     },
     {
         id: 24,
@@ -197,7 +197,7 @@ const food = [
         country:'Australia',
         group:'main courses',
         name:'Meat Pie',
-        img: 'https://www.sbs.com.au/food/sites/sbs.com.au.food/files/styles/full/public/mmie_1019_steakstoutpie_h.jpg?itok=5m_zNd7H'
+        img: 'https://www.chrisanthidis.gr/en/assets/components/phpthumbof/cache/39.bed2192c9ad92904a9cc89e9725fd7a9.png'
     },
     {
         id: 25,
@@ -205,7 +205,7 @@ const food = [
         country:'Thailand',
         group:'main courses',
         name:'Pad Thai',
-        img: 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/7DE647CE-2E09-4CBE-88EE-CFFCC70D7440/Derivates/F8CA1C89-596A-4EC0-9A63-6505DDBD528C.jpg'
+        img: 'https://sushifriendswroclaw.pl/wp-content/uploads/2022/01/pad-thai-vege.png'
     },
     {
         id: 26,
@@ -213,7 +213,7 @@ const food = [
         country:'Ethiopia',
         group:'main courses',
         name:'Injera',
-        img: 'https://images.squarespace-cdn.com/content/v1/5db48cdef991e52a49075819/1603835994712-FJ0150LEMHFG5AVC0099/Rolled+Injera.jpg?format=1000w'
+        img: 'https://amarinjera.com/assets/img/hero-img.png'
     },
     {
         id: 27,
@@ -221,7 +221,7 @@ const food = [
         country:'Vietnam',
         group:'main courses',
         name:'Pho',
-        img: 'https://staticsmaker.iplsc.com/smaker_production_2022_02_14/a09cc7a3921861a28dfdc8eb884032b8-lg.jpg'
+        img: 'https://rolld.com.au/wp-content/uploads/2022/07/Sliced_Beef_Pho.png'
     },
     {
         id: 28,
@@ -229,7 +229,7 @@ const food = [
         country:'Greece',
         group:'desserts',
         name:'Baklava',
-        img: 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/7C64C8C0-5802-4D57-A227-CCB7D8659B49/Derivates/bfce5898-2257-4061-8785-a37931d7f49a.jpg'
+        img: 'https://www.baklavaandpitebya.co.uk/wp-content/uploads/2021/04/baklava_woo2transparent.png'
     },
     {
         id: 29,
@@ -237,14 +237,94 @@ const food = [
         country:'Ireland',
         group:'main courses',
         name:'Irish Stew',
-        img: 'https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/31C252BF-B464-487F-B715-CD5C50BC138D/Derivates/544aa073-9f68-488a-b226-02c1b38093ff.jpg'
+        img: 'https://cdn.shopify.com/s/files/1/0085/1171/7440/t/2/assets/beef-stew-freeze-dried-food-aerial-1605207962503.png'
     },
     {
-    id: 9,
+    id: 30,
     continent:'South America',
     country:'Argentina',
     group:'main courses',
     name:'Asado',
-    img: 'https://uploads-ssl.webflow.com/603e957e210fe9beee0dc084/603e957e210fe909a70dc0c4_Asado-Gaucho_Menu1.jpg'
-    }
+    img: 'https://yastatic.net/avatars/get-grocery-goods/2756334/cb796ad8-dd5f-4c6f-8569-82219fe6f163/750x500?webp=true'
+    },
+    {
+        id: 31,
+        continent: 'Asia',
+        country: 'South Korea',
+        group: 'main courses',
+        name: 'Bibimbap',
+        img: 'https://niedzielnykucharz.pl/wp-content/uploads/2021/05/5-Obiad%C3%B3w-za-10-z%C5%82-2021-05-18T223659.105-1.png'
+    },
+    {
+        id: 32,
+        continent: 'North America',
+        country: 'Mexico',
+        group: 'appetizers',
+        name: 'Guacamole',
+        img: 'https://blog.misfitsmarket.com/wp-content/uploads/2021/04/basic-guacamole-2021.png'
+    },
+    {
+        id: 33,
+        continent: 'Africa',
+        country: 'Morocco',
+        group: 'desserts',
+        name: 'Baklava',
+        img: 'https://www.imamcagdas.com/iyi-baklavanin-sesi-5-blog.png'
+    },
+    {
+        id: 34,
+        continent: 'Asia',
+        country: 'Vietnam',
+        group: 'desserts',
+        name: 'Che Ba Mau',
+        img: 'https://delitasty.nl/wp-content/uploads/2014/06/29-che-ba-mau.png'
+    },
+    {
+        id: 35,
+        continent: 'Europe',
+        country: 'Spain',
+        group: 'desserts',
+        name: 'Churros',
+        img: 'https://loschurroshermanos.ch/wp-content/uploads/2021/06/Untitled-3.png'
+    },
+    {
+        id: 36,
+        continent: 'North America',
+        country: 'USA',
+        group: 'desserts',
+        name: 'Key Lime Pie',
+        img: 'https://8e9d5b8b8dcb9208ef3f-01db2a53ae0368d03387780ee86ead55.ssl.cf2.rackcdn.com/0263624000000_CF_hyvee_default_large.png'
+    },
+    {
+        id: 37,
+        continent: 'Europe',
+        country: 'Germany',
+        group: 'main courses',
+        name: 'Sauerbraten',
+        img: 'https://hofmanns-shop.de/cdn/shop/products/zarter-sauerbraten_48108_1.png?v=1667739098&width=533'
+    },
+    {
+        id: 38,
+        continent: 'Asia',
+        country: 'Indonesia',
+        group: 'main courses',
+        name: 'Nasi Goreng',
+        img: 'https://www.klein-java.nl/wp-content/uploads/2020/12/klein-java-indisch-eten-breda-Rames-nasi-goreng.png'
+    },
+    {
+        id: 39,
+        continent: 'Europe',
+        country: 'Italy',
+        group: 'desserts',
+        name: 'Tiramisu',
+        img: 'https://kultowealkohole.pl/uploads/images/7g/604769f70c2f7.png'
+    },
+    {
+        id: 40,
+        continent: 'South America',
+        country: 'Peru',
+        group: 'main courses',
+        name: 'Lomo Saltado',
+        img: 'https://recreolagranjita.com/wp-content/uploads/2023/07/Carta-Extra_Lomo-Saltado.png'
+      }
 ]
